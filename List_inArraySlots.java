@@ -6,15 +6,23 @@
 public class List_inArraySlots {
 
     // declare fields here
-    private int[] intHolder;
+    private int[] typeHolder;
     private int size;
+    private String[] valueHolder;
     /**
       Construct an empty list with a small initial capacity.
      */
     public List_inArraySlots() {
-      intHolder = new int[10];
+      typeHolder = new int[10];
+      valueHolder = new String[10];
       size = 0;
     }
+
+   //Returns true value
+   public getValue(int index) {
+        
+
+}
 
 
     /** 
