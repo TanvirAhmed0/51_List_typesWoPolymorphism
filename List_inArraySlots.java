@@ -26,6 +26,11 @@ public class List_inArraySlots {
       Construct an empty list with a small initial capacity.
      */
     public List_inArraySlots() {
+        typeOfElements = new int[INITIAL_CAPACITY];
+        
+        intElements = new int[INITIAL_CAPACITY];
+        doubleElements = new double[INITIAL_CAPACITY];
+        stringElements = new String[INITIAL_CAPACITY];
     }
 
 
