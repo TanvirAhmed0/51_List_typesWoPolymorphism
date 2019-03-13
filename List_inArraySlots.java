@@ -51,7 +51,7 @@ public class List_inArraySlots {
        for(int index = 0; index < filledElements; index ++){
          if(typeOfElements[index] == 0) returnString = returnString + intElements[index] + ",";
          else if(typeOfElements[index] == 1) returnString = returnString + doubleElements[index] + ",";
-         else returnString = returnString + stringElements[index] + ",";
+         else if(typeOfElements[index] == 2) returnString = returnString + stringElements[index] + ",";
        }
        returnString = returnString + "]";
        return returnString;
