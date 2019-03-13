@@ -26,22 +26,36 @@ public class List_inArraySlots {
       Construct an empty list with a small initial capacity.
      */
     public List_inArraySlots() {
+      intElements = new int[INITIAL_CAPACITY];
+      doubleElements = new double[INITIAL_CAPACITY];
+      stringElements = new String[INITIAL_CAPACITY];
+      typeOfElements = new int[INITIAL_CAPACITY];
+      filledElements = 0;
     }
 
 
     /**
       @return the number of elements in this list
      */
-    // public int size() {
-    // }
+     public int size() {
+       return filledElements;
+     }
 
 
      /**
        @return a string representation of this list,
        in [a,b,c,] format
       */
-    // public String toString() {
-    // }
+     public String toString() {
+       String returnString = "[";
+       for(int index = 0; index < filledElements; index ++){
+         if(typeOfElements[index] == 0)returnString = returnString + intElements[index] + ",";
+         if(typeOfElements[index] == 1) returnString = returnString + doubleElements[index] + ",";
+         else returnString = returnString + stringElements[index] + ",";
+       }
+       returnString = returnString + "]";
+       return returnString;
+     }
 
 
     /**
