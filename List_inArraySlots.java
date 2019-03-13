@@ -37,8 +37,9 @@ public class List_inArraySlots {
     /**
       @return the number of elements in this list
      */
-    // public int size() {
-    // }
+    public int size() {
+        return filledElements;
+    }
 
 
      /**
