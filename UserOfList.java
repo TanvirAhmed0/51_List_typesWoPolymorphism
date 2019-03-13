@@ -7,8 +7,8 @@ public class UserOfList {
     public static void main( String[] args ) {
         list = new List_inArraySlots();
 
-        System.out.println( "number of elements: " + list.size() );
-        // System.out.println( "empty list: " + list);
+         System.out.println( "number of elements: " + list.size() );
+         System.out.println( "empty list: " + list);
 
         // // Populate the list with diverse elements.
         // list.add( 2, -1, -2.0,  "important");
