@@ -68,17 +68,16 @@ public class List_inArraySlots {
                        , double doubleValue
                        , String stringValue
                        ) {
-        filledElements++;
+        filledElements++;                
         if(filledElements == typeOfElements.length){
             expand();
         }
-        
-        else if (type == 0) {
-            typeOfElements[filledElements - 1] = 0;
-            intElements[filledElements - 1] = intValue;
+        if (type == 0) {
+            typeOfElements[filledElements] = 0;
+            intElements[filledElements] = intValue;
         }
         
-        else if (type == 1) {
+        if (type == 1) {
             typeOfElements[filledElements - 1] = 1;
             doubleElements[filledElements - 1] = doubleValue;
         }
@@ -90,7 +89,6 @@ public class List_inArraySlots {
         
         return true;
      }
-
 
     /**
       Double the capacity of the List_inArraySlots,
@@ -112,7 +110,7 @@ public class List_inArraySlots {
         for(int index = 0; index < filledElements; index ++){
             intExtraHolder[index] = intElements[index];
           }
-        typeOfElements = new int[filledElements + 10];
+        intElements = new int[filledElements + 10];
         for(int index = 0; index < filledElements; index ++){
           intElements[index] = intExtraHolder[index];
         }
@@ -122,7 +120,7 @@ public class List_inArraySlots {
         for(int index = 0; index < filledElements; index ++){
             doubleExtraHolder[index] = doubleElements[index];
           }
-        typeOfElements = new int[filledElements + 10];
+        doubleElements = new double[filledElements + 10];
         for(int index = 0; index < filledElements; index ++){
           doubleElements[index] = doubleExtraHolder[index];
         }
@@ -132,7 +130,7 @@ public class List_inArraySlots {
         for(int index = 0; index < filledElements; index ++){
             stringExtraHolder[index] = stringElements[index];
           }
-        typeOfElements = new int[filledElements + 10];
+        stringElements = new String[filledElements + 10];
         for(int index = 0; index < filledElements; index ++){
           stringElements[index] = stringExtraHolder[index];
         }
